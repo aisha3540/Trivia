@@ -7,9 +7,7 @@ public class Players {
 	  this.points=points;
   }
   
-  public static void main(String[] args){
-	  //hello
-  }
+
 
 }
  
