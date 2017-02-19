@@ -6,7 +6,7 @@ public class GeographyQuestion extends Question{
 	private String[] GeographyAList= new String[15];
 	
 	public GeographyQuestion(){
-		this.QuestionNumber= (int) Math.floor(Math.random() * 16);
+		this.QuestionNumber= (int) Math.floor(Math.random() * 15);
 		
 		GeographyQList[0]="What Country is North of the United States of America?";
 		GeographyAList[0]="Canada";

@@ -5,7 +5,7 @@ public class PopCultureQuestion extends Question{
 	private String[] PCQList= new String[15];
 	private String[] PCAList= new String[15];
 	public PopCultureQuestion(){
-		this.QuestionNumber= (int) Math.floor(Math.random() * 16);
+		this.QuestionNumber= (int) Math.floor(Math.random() * 15);
 		
 		PCQList[0]="What movie released in 2016 was the second most successful movie of the year?";
 		PCAList[0]="Finding Dory";

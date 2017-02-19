@@ -5,7 +5,7 @@ public class MathQuestion extends Question{
 	private String[] MathQList= new String[15];
 	private String[] MathAList= new String[15];
 	public MathQuestion(){
-		this.QuestionNumber= (int) Math.floor(Math.random() * 16);
+		this.QuestionNumber= (int) Math.floor(Math.random() * 15);
 		MathQList[0]="What is 9*8?";
 		MathAList[0]="72";
 		MathQList[1]="What is 125/5?";

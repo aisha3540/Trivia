@@ -5,7 +5,7 @@ public class ScienceQuestion extends Question{
 	private String[] ScienceQList= new String[15];
 	private String[] ScienceAList= new String[15];
 	public ScienceQuestion(){
-		this.QuestionNumber= (int) Math.floor(Math.random() * 16);
+		this.QuestionNumber= (int) Math.floor(Math.random() * 15);
 		ScienceQList[0]="What is the sympol for the element Tin?";
 		ScienceAList[0]="Sn";
 		ScienceQList[1]="Besides Mercury, what is the name of the only other element that is naturally a liquid?";

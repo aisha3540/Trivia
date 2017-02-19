@@ -5,7 +5,7 @@ public class HistoryQuestion extends Question{
 	private String[] HistoryQList= new String[15];
 	private String[] HistoryAList= new String[15];
 	public HistoryQuestion(){
-		this.QuestionNumber= (int) Math.floor(Math.random() * 16);
+		this.QuestionNumber= (int) Math.floor(Math.random() * 15);
 		HistoryQList[0]="What was Alexander Hamilton's first son's first name?";
 		HistoryAList[0]="Philip";
 		HistoryQList[1]="In what coninent did the Industrial Revolution first take place?";
