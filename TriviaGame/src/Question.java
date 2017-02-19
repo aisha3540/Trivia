@@ -9,8 +9,9 @@ public abstract class Question {
 		if(playerResponse.equalsIgnoreCase(answer)){
 			return true;}
 		else{return false;}
-				
-		}
 	}
+	
+	public abstract boolean isCorrect(String playerResponse);
+}
 
 
