@@ -6,6 +6,7 @@ public class Main {
 	public static ArrayList<Player> sortScores(Player[] gameplayers){
 		
 		ArrayList<Player> sortedPlayers= new ArrayList<Player>();
+		System.out.println(sortedPlayers.size());
 		for(int i=0; i<gameplayers.length; i++){
 			int highscore=0;
 			for (int j=i; j<gameplayers.length; j++){
