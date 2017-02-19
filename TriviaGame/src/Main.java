@@ -20,7 +20,7 @@ public class Main {
 
 
 public static void main(String args[]){
-	System.out.println("Welcome to (Name TBD)!");
+	System.out.println("Welcome to PENTATRIVIA!");
 	Scanner scan=new Scanner(System.in);
 	System.out.println("How many players do you want to play?");
 	int numPlayers=scan.nextInt();
@@ -50,7 +50,7 @@ public static void main(String args[]){
 			System.out.println();
 			
 			Question PCQ = new PopCultureQuestion();
-			System.out.println("Question 1: Pop Culture:"+ PCQ.askQuestion()); 
+			System.out.println("Question 1: Pop Culture: "+ PCQ.askQuestion()); 
 			String currentAnswer1 = currentPlayer.getInput();
 			if (PCQ.isCorrect(currentAnswer1)){
 				currentPlayer.incrementPoints();
@@ -59,7 +59,7 @@ public static void main(String args[]){
 			System.out.println();
 			
 			Question MathQ = new MathQuestion();
-			System.out.println("Question 1:Math:"+ MathQ.askQuestion()); 
+			System.out.println("Question 2: Math: "+ MathQ.askQuestion()); 
 			String currentAnswer2 = currentPlayer.getInput();
 			if (MathQ.isCorrect(currentAnswer2)){
 				currentPlayer.incrementPoints();
@@ -68,7 +68,7 @@ public static void main(String args[]){
 			System.out.println();
 			
 			Question HistoryQ = new HistoryQuestion();
-			System.out.println("Question 2:History:"+ HistoryQ.askQuestion()); 
+			System.out.println("Question 3: History: "+ HistoryQ.askQuestion()); 
 			String currentAnswer3 = currentPlayer.getInput();
 			if (HistoryQ.isCorrect(currentAnswer3)){
 				currentPlayer.incrementPoints();
@@ -77,7 +77,7 @@ public static void main(String args[]){
 			System.out.println();
 			
 			Question ScienceQ = new ScienceQuestion();
-			System.out.println("Question 1:Math:"+ ScienceQ.askQuestion()); 
+			System.out.println("Question 4: Science: "+ ScienceQ.askQuestion()); 
 			String currentAnswer4 = currentPlayer.getInput();
 			if (ScienceQ.isCorrect(currentAnswer4)){
 				currentPlayer.incrementPoints();
@@ -86,7 +86,7 @@ public static void main(String args[]){
 			System.out.println();
 			
 			Question GeographyQ = new GeographyQuestion();
-			System.out.println("Question 1:Math:"+ GeographyQ.askQuestion()); 
+			System.out.println("Question 5: Geography: "+ GeographyQ.askQuestion()); 
 			String currentAnswer5 = currentPlayer.getInput();
 			if (GeographyQ.isCorrect(currentAnswer5)){
 				currentPlayer.incrementPoints();
@@ -97,6 +97,7 @@ public static void main(String args[]){
 			gamePlayers[i]=currentPlayer;
 			currentPlayer=null;
 		}
+		System.out.println(gamePlayers.length);
 		System.out.println("Round "+m+" complete! Here are the current rankings:");
 		PlayersSortedByScore= sortScores(gamePlayers);
 		for(Player g:PlayersSortedByScore){
