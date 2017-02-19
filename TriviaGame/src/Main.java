@@ -6,11 +6,17 @@ public class Main {
 	public static ArrayList<Player> sortScores(Player[] gameplayers){
 		
 		ArrayList<Player> sortedPlayers= new ArrayList<Player>();
+		for(Player g:gameplayers){
+			sortedPlayers.add(g);
+		}
+		Player holder= new Player();
 		for(int i=0; i<gameplayers.length; i++){
 			int highscore=0;
 			for (int j=i; j<gameplayers.length; j++){
-				if(gameplayers[j].getPoints()>highscore){
-					sortedPlayers.add(gameplayers[j]);
+				if(gameplayers[j].getPoints()>=highscore){
+					holder=sortedPlayers.get(i);
+					sortedPlayers.set(i, gameplayers[j]);
+					sortedPlayers.set(j, holder);
 					highscore=gameplayers[j].getPoints();
 				}
 			}
@@ -97,7 +103,7 @@ public static void main(String args[]){
 			gamePlayers[i]=currentPlayer;
 			currentPlayer=null;
 		}
-		System.out.println(gamePlayers.length);
+		//System.out.println(gamePlayers.length);
 		System.out.println("Round "+m+" complete! Here are the current rankings:");
 		PlayersSortedByScore= sortScores(gamePlayers);
 		for(Player g:PlayersSortedByScore){
