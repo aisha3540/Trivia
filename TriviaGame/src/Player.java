@@ -7,6 +7,7 @@ public class Player {
   
   public Player(){
 	  this.points=0;
+	  this.name=null;
   }
   
   public String getInput(){

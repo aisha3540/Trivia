@@ -24,10 +24,14 @@ public static void main(String args[]){
 	Scanner scan=new Scanner(System.in);
 	System.out.println("How many players do you want to play?");
 	int numPlayers=scan.nextInt();
+	scan.nextLine();
 	Player[] gamePlayers= new Player[numPlayers];
+	for(int n=0; n<numPlayers; n++){
+		gamePlayers[n]=new Player();
+	}
 	ArrayList<Player> PlayersSortedByScore= new ArrayList<Player>();
 	int continueOrNot;
-	Player currentPlayer;
+	Player currentPlayer=new Player();
 
 	
 	for(int m=1; m>0; m++){
@@ -91,6 +95,7 @@ public static void main(String args[]){
 			System.out.println();
 			
 			gamePlayers[i]=currentPlayer;
+			currentPlayer=null;
 		}
 		System.out.println("Round "+m+" complete! Here are the current rankings:");
 		PlayersSortedByScore= sortScores(gamePlayers);
