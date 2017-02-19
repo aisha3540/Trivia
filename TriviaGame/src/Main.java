@@ -20,7 +20,7 @@ public class Main {
 
 
 public static void main(String args[]){
-	System.out.println("Welcome to (Name TBD)!");
+	System.out.println("Welcome to PENTATRIVIA!");
 	Scanner scan=new Scanner(System.in);
 	System.out.println("How many players do you want to play?");
 	int numPlayers=scan.nextInt();
