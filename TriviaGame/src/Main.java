@@ -33,18 +33,18 @@ public static void Main(String args[]){
 		player1.incrementPoints();}
 	Question HistoryQ = new HistoryQuestion();
 	System.out.println(HistoryQ.askQuestion()); 
-	String currentAnswer = player1.getInput();
-	if (Question.isCorrect(currentAnswer)){
+	currentAnswer = player1.getInput();
+	if (HistoryQ.isCorrect(currentAnswer)){
 		player1.incrementPoints();}
-	Question mathQ = new MathQuestion();
-	mathQ.askQuestion(); 
-	String currentAnswer = player1.getInput();
-	if (Question.isCorrect(currentAnswer)){
+	Question PopCultureQ = new PopCultureQuestion();
+	PopCultureQ.askQuestion(); 
+	 currentAnswer = player1.getInput();
+	if (HistoryQ.isCorrect(currentAnswer)){
 		player1.incrementPoints();}
-	Question mathQ = new MathQuestion();
-	mathQ.askQuestion(); 
-	String currentAnswer = player1.getInput();
-	if (Question.isCorrect(currentAnswer)){
+	Question ScienceQ = new ScienceQuestion();
+	ScienceQ.askQuestion(); 
+	 currentAnswer = player1.getInput();
+	if (ScienceQ.isCorrect(currentAnswer)){
 		player1.incrementPoints();}
 	
 	
