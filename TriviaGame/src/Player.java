@@ -11,7 +11,7 @@ public class Player {
   
   public String getInput(){
 	  Scanner console = new Scanner(System.in); 
-	  currentAnswer = console.nextLine();
+	  currentAnswer = console.nextLine().toString();
 	  return currentAnswer; 
   }
   

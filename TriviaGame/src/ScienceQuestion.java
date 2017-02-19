@@ -22,20 +22,20 @@ public class ScienceQuestion extends Question{
 		ScienceAList[6]="Potential";
 		ScienceQList[7]="An Ammonium ion has how many hydrogen atoms in it?";
 		ScienceAList[7]="4";
-		ScienceQList[8]="What is the on";
-		ScienceAList[8]="";
-		ScienceQList[9]="";
-		ScienceAList[9]="";
-		ScienceQList[10]="";
-		ScienceAList[10]="";
-		ScienceQList[11]="";
-		ScienceAList[11]="";
-		ScienceQList[12]="";
-		ScienceAList[12]="";
-		ScienceQList[13]="";
-		ScienceAList[13]="";
-		ScienceQList[14]="";
-		ScienceAList[14]="";
+		ScienceQList[8]="What is the only common positive polyatomic ion?";
+		ScienceAList[8]="Ammonium";
+		ScienceQList[9]="When left in the sun, what will a jellyfish do?";
+		ScienceAList[9]="Evaporate";
+		ScienceQList[10]="The electrons on the outer shell of an aton are called the _______ electrons.";
+		ScienceAList[10]="Valence";
+		ScienceQList[11]="The equation for kinetic energy is KE= 1/2___v^2.";
+		ScienceAList[11]="m";
+		ScienceQList[12]="What is the symbol of the 77th element on the periodic table?";
+		ScienceAList[12]="Ir";
+		ScienceQList[13]="The number 6.022*10^23 is one ________.";
+		ScienceAList[13]="Mole";
+		ScienceQList[14]="What is the term used to desbribe the is the vertical stretching and horizontal compression of objects into long thin shapes in a very strong non-homogeneous gravitational field?";
+		ScienceAList[14]="Spaghettification";
 	}
 	
 	public String askQuestion(){

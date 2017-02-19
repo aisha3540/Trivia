@@ -34,65 +34,65 @@ public static void Main(String args[]){
 		System.out.println("ROUND "+m);
 		System.out.println();
 		
-	for(int i=0; i<numPlayers; i++){
-		System.out.println("It is player "+(i+1)+"'s turn!");
-		System.out.println("What is your name?");
-		currentPlayer= gamePlayers[i];
-		currentPlayer.setName(scan.next());
-		System.out.println();
-		
-		Question PCQ = new PopCultureQuestion();
-		System.out.println("Question 1: Pop Culture:"+ PCQ.askQuestion()); 
-		String currentAnswer1 = currentPlayer.getInput();
-		if (PCQ.isCorrect(currentAnswer1)){
-			currentPlayer.incrementPoints();
-			System.out.println("Correct!");}
-		else{System.out.println("Incorrect. The correct answer is: "+ PCQ.getAnswer());}
-		System.out.println();
-		
-		Question MathQ = new MathQuestion();
-		System.out.println("Question 1:Math:"+ MathQ.askQuestion()); 
-		String currentAnswer2 = currentPlayer.getInput();
-		if (MathQ.isCorrect(currentAnswer2)){
-			currentPlayer.incrementPoints();
-			System.out.println("Correct!");}
-		else{System.out.println("Incorrect. The correct answer is: "+ MathQ.getAnswer());}
-		System.out.println();
-		
-		Question HistoryQ = new HistoryQuestion();
-		System.out.println("Question 2:History:"+ HistoryQ.askQuestion()); 
-		String currentAnswer3 = currentPlayer.getInput();
-		if (HistoryQ.isCorrect(currentAnswer3)){
-			currentPlayer.incrementPoints();
-			System.out.println("Correct!");}
-		else{System.out.println("Incorrect. The correct answer is: "+ HistoryQ.getAnswer());}
-		System.out.println();
-		
-		Question ScienceQ = new ScienceQuestion();
-		System.out.println("Question 1:Math:"+ ScienceQ.askQuestion()); 
-		String currentAnswer4 = currentPlayer.getInput();
-		if (ScienceQ.isCorrect(currentAnswer4)){
-			currentPlayer.incrementPoints();
-			System.out.println("Correct!");}
-		else{System.out.println("Incorrect. The correct answer is: "+ ScienceQ.getAnswer());}
-		System.out.println();
-		
-		Question GeographyQ = new GeographyQuestion();
-		System.out.println("Question 1:Math:"+ GeographyQ.askQuestion()); 
-		String currentAnswer5 = currentPlayer.getInput();
-		if (GeographyQ.isCorrect(currentAnswer5)){
-			currentPlayer.incrementPoints();
-			System.out.println("Correct!");}
-		else{System.out.println("Incorrect. The correct answer is: "+ GeographyQ.getAnswer());}
-		System.out.println();
-		
-		gamePlayers[i]=currentPlayer;
+		for(int i=0; i<numPlayers; i++){
+			System.out.println("It is player "+(i+1)+"'s turn!");
+			System.out.println("What is your name?");
+			currentPlayer= gamePlayers[i];
+			currentPlayer.setName(scan.next());
+			System.out.println();
+			
+			Question PCQ = new PopCultureQuestion();
+			System.out.println("Question 1: Pop Culture:"+ PCQ.askQuestion()); 
+			String currentAnswer1 = currentPlayer.getInput();
+			if (PCQ.isCorrect(currentAnswer1)){
+				currentPlayer.incrementPoints();
+				System.out.println("Correct!");}
+			else{System.out.println("Incorrect. The correct answer is: "+ PCQ.getAnswer());}
+			System.out.println();
+			
+			Question MathQ = new MathQuestion();
+			System.out.println("Question 1:Math:"+ MathQ.askQuestion()); 
+			String currentAnswer2 = currentPlayer.getInput();
+			if (MathQ.isCorrect(currentAnswer2)){
+				currentPlayer.incrementPoints();
+				System.out.println("Correct!");}
+			else{System.out.println("Incorrect. The correct answer is: "+ MathQ.getAnswer());}
+			System.out.println();
+			
+			Question HistoryQ = new HistoryQuestion();
+			System.out.println("Question 2:History:"+ HistoryQ.askQuestion()); 
+			String currentAnswer3 = currentPlayer.getInput();
+			if (HistoryQ.isCorrect(currentAnswer3)){
+				currentPlayer.incrementPoints();
+				System.out.println("Correct!");}
+			else{System.out.println("Incorrect. The correct answer is: "+ HistoryQ.getAnswer());}
+			System.out.println();
+			
+			Question ScienceQ = new ScienceQuestion();
+			System.out.println("Question 1:Math:"+ ScienceQ.askQuestion()); 
+			String currentAnswer4 = currentPlayer.getInput();
+			if (ScienceQ.isCorrect(currentAnswer4)){
+				currentPlayer.incrementPoints();
+				System.out.println("Correct!");}
+			else{System.out.println("Incorrect. The correct answer is: "+ ScienceQ.getAnswer());}
+			System.out.println();
+			
+			Question GeographyQ = new GeographyQuestion();
+			System.out.println("Question 1:Math:"+ GeographyQ.askQuestion()); 
+			String currentAnswer5 = currentPlayer.getInput();
+			if (GeographyQ.isCorrect(currentAnswer5)){
+				currentPlayer.incrementPoints();
+				System.out.println("Correct!");}
+			else{System.out.println("Incorrect. The correct answer is: "+ GeographyQ.getAnswer());}
+			System.out.println();
+			
+			gamePlayers[i]=currentPlayer;
 		}
 		System.out.println("Round "+m+" complete! Here are the current rankings:");
 		PlayersSortedByScore= sortScores(gamePlayers);
 		for(Player g:PlayersSortedByScore){
 			System.out.println((PlayersSortedByScore.indexOf(g)+1)+". "+g.getName()+" ----- "+g.getPoints()+" points.");
-		}
+			}
 		System.out.println();
 		System.out.println("Do you want to continue your game or end it here?");
 		System.out.println("To continue you game, type '1', to end it now type '2'.");
