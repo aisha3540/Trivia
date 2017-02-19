@@ -25,13 +25,29 @@ public int getPoints(){
 }
 
 public static void Main(String args[]){
-	while (playerNumber <= 2){
-	for(int i = 0; i < 5; i++){
-	//call questions array to get first question
+	while (playerNumber <= 2){	
+	Question MathQ = new MathQuestion();
+	System.out.println(MathQ.askQuestion()); 
 	String currentAnswer = player1.getInput();
-	if (Question.isCorrect(currentAnswer, answer)){
-		player1.incrementPoints();
-	}
+	if (MathQ.isCorrect(currentAnswer)){
+		player1.incrementPoints();}
+	Question HistoryQ = new HistoryQuestion();
+	System.out.println(HistoryQ.askQuestion()); 
+	currentAnswer = player1.getInput();
+	if (HistoryQ.isCorrect(currentAnswer)){
+		player1.incrementPoints();}
+	Question PopCultureQ = new PopCultureQuestion();
+	PopCultureQ.askQuestion(); 
+	 currentAnswer = player1.getInput();
+	if (HistoryQ.isCorrect(currentAnswer)){
+		player1.incrementPoints();}
+	Question ScienceQ = new ScienceQuestion();
+	ScienceQ.askQuestion(); 
+	 currentAnswer = player1.getInput();
+	if (ScienceQ.isCorrect(currentAnswer)){
+		player1.incrementPoints();}
+	
+	
 	playerNumber++; 
 }
 
