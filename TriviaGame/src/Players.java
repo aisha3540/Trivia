@@ -4,8 +4,7 @@ public class Players {
 	private int points;
 	private String currentAnswer; 
   
-  public Players(String currentAnswer, int points){
-	  this.points=points;
+  public Players(){
 	  
   }
   
