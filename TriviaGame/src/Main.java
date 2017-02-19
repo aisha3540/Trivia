@@ -19,7 +19,7 @@ public class Main {
 	}
 
 
-public static void Main(String args[]){
+public static void main(String args[]){
 	System.out.println("Welcome to (Name TBD)!");
 	Scanner scan=new Scanner(System.in);
 	System.out.println("How many players do you want to play?");
@@ -28,17 +28,21 @@ public static void Main(String args[]){
 	ArrayList<Player> PlayersSortedByScore= new ArrayList<Player>();
 	int continueOrNot;
 	Player currentPlayer;
+
 	
 	for(int m=1; m>0; m++){
 		System.out.println();
 		System.out.println("ROUND "+m);
 		System.out.println();
 		
+		
 		for(int i=0; i<numPlayers; i++){
-			System.out.println("It is player "+(i+1)+"'s turn!");
-			System.out.println("What is your name?");
 			currentPlayer= gamePlayers[i];
-			currentPlayer.setName(scan.next());
+			if(m==1){
+				System.out.println("Player "+(i+1)+", what is your name?");
+				currentPlayer.setName(scan.nextLine());
+			}
+			System.out.println("It is "+currentPlayer.getName()+"'s turn!");
 			System.out.println();
 			
 			Question PCQ = new PopCultureQuestion();
