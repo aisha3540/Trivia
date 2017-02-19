@@ -7,36 +7,36 @@ public class PopCultureQuestion extends Question{
 	public PopCultureQuestion(){
 		this.QuestionNumber= (int) Math.floor(Math.random() * 16);
 		
-		PCQList[0]="";
-		PCAList[0]="";
-		PCQList[1]="";
-		PCAList[1]="";
-		PCQList[2]="";
-		PCAList[2]="";
-		PCQList[3]="";
-		PCAList[3]="";
-		PCQList[4]="";
-		PCAList[4]="";
-		PCQList[5]="";
-		PCAList[5]="";
-		PCQList[6]="";
-		PCAList[6]="";
-		PCQList[7]="";
-		PCAList[7]="";
-		PCQList[8]="";
-		PCAList[8]="";
-		PCQList[9]="";
-		PCAList[9]="";
-		PCQList[10]="";
-		PCAList[10]="";
-		PCQList[11]="";
-		PCAList[11]="";
-		PCQList[12]="";
-		PCAList[12]="";
-		PCQList[13]="";
-		PCAList[13]="";
-		PCQList[14]="";
-		PCAList[14]="";
+		PCQList[0]="What movie released in 2016 was the second most successful movie of the year?";
+		PCAList[0]="Finding Dory";
+		PCQList[1]="Finish the title to this March 2016 film release - Batman v ?????";
+		PCAList[1]="Superman";
+		PCQList[2]="What is the name of the mammoth in the Ice Age movies?";
+		PCAList[2]="Manny";
+		PCQList[3]="Who does Johnny Depp play in the Pirates of the Caribbean films?";
+		PCAList[3]="captain jack sparrow";
+		PCQList[4]="Who is Prince William married to?";
+		PCAList[4]="Kate";
+		PCQList[5]="In which country did Manga originate?";
+		PCAList[5]="Japan";
+		PCQList[6]="Which country in the world has made the most movies?";
+		PCAList[6]="India";
+		PCQList[7]="What is the most popular instrument in the world?";
+		PCAList[7]="piano";
+		PCQList[8]="Which movie franchise has made more money: Harry Potter or Marvel?";
+		PCAList[8]="Marvel";
+		PCQList[9]="Which musical released in 2015 holds the record as the most-nominated production in Tony Awards history?";
+		PCAList[9]="Hamilton";
+		PCQList[10]="In what year did Leonardo Di Caprio finally win an Oscar?";
+		PCAList[10]="2016";
+		PCQList[11]="How many years did it take Lin Manuel Miranda to write the musical Hamilton?";
+		PCAList[11]="6";
+		PCQList[12]="What is the first name of the Male lead character in La La Land?";
+		PCAList[12]="Sebastian";
+		PCQList[13]="How many times has someone in the Star Wars movies lost thier hand/arm?";
+		PCAList[13]="13";
+		PCQList[14]="What is the most popular social media platform in the world?";
+		PCAList[14]="Facebook";
 	}
 	
 	public String askQuestion(){
