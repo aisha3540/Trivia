@@ -1,10 +1,22 @@
-
+import java.util.Scanner;
 public class Players {
 	
-	public int points;
+	private int points;
+	private String currentAnswer; 
   
-  public Players(String name, int points){
+  public Players(String currentAnswer, int points){
 	  this.points=points;
+	  
+  }
+  
+  public String getInput(){
+	  Scanner console = new Scanner(System.in); 
+	  currentAnswer = console.nextLine();
+	  return currentAnswer; 
+  }
+  
+  public void incrementPoints(){
+		  points++; 
   }
   
 
