@@ -1,11 +1,12 @@
 import java.util.Scanner;
-public class Players {
+public class Player {
 	
 	private int points;
 	private String currentAnswer; 
+	private String name;
   
-  public Players(){
-	  
+  public Player(){
+	  this.points=0;
   }
   
   public String getInput(){
@@ -17,7 +18,15 @@ public class Players {
   public void incrementPoints(){
 		  points++; 
   }
-  
+  public int getPoints(){
+	  return points;
+  }
+  public void setName(String Name){
+	  this.name=Name;
+  }
+  public String getName(){
+	  return this.name;
+  }
 
 
 }
