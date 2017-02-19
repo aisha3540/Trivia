@@ -5,7 +5,10 @@ public class Players {
   
   public Players(String name, int points){
 	  this.points=points;
-    
+  }
+  
+  public static void main(String[] args){
+	  //hello
   }
 
 }
